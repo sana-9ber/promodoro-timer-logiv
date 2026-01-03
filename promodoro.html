@@ -1,39 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pomodoro Timer</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
 <body>
+ 
+ <div class=session_type>
+   <span class="session-type focus active">Focus</span>
+   <span class="session-type break">Break</span>
+ </div>
 
-  <div class="session_type">
-    <span class="session-type focus active">Focus</span>
-    <span class="session-type break">Break</span>
-  </div>
-
-  <div class="timer_counter">
-    <div class="session-counter">Session 1/4</div>
-    <div class="time_display">
-      <span class="minute">25</span>:<span class="second">00</span>
+  
+  
+  <div class=timer_counter> 
+     <div class="session-counter">Session 1/4</div>
+  
+    <div class=time_display> 
+      <span class=minute>25</span>:<span class=second>00</span>
+      
     </div>
+  
   </div>
+
+ 
 
   <div id="pomodoro-controls">
-    <button id="start-btn">▶ Start</button>
-    <button id="pause-btn">⏸ Pause</button>
-    <button id="resume-btn">▶ Resume</button>
-    <button id="reset-btn">⟲ Reset</button>
+    <button id="pause-btn">⏸</button>
+    <button id="resume-btn">▶</button>
+    <button id="reset-btn">⟲</button>
   </div>
 
-  <!-- Linear Progress Bar -->
+  
+ <!-- Linear Progress Bar BELOW the timer -->
   <div class="progress-container">
     <div class="progress-fill"></div>
   </div>
-
   <script src="script.js"></script>
 </body>
 
